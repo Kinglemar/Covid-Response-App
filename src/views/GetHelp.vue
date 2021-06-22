@@ -124,7 +124,7 @@
                     <div class="errors" v-if="!$v.checked.required && $v.checked.$dirty">Please acknowlegde the details provided</div>
                 </div>
             </div>
-            <button type="submit" @submit="processSubmit" id="">Submit</button>
+            <button type="submit" id="">Submit</button>
 
             
         </form>
@@ -134,7 +134,7 @@
 </template>
 
 <script>
-    import { required, minLength, between, alpha} from "vuelidate/lib/validators"
+    import { required, minLength, between} from "vuelidate/lib/validators"
 
     export default{
         name: 'GetHelp',
@@ -176,7 +176,6 @@
         fullName: {
             minLength: minLength(3),
             required,
-            alpha
         },
 
         number:{
