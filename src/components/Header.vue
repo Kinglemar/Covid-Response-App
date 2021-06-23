@@ -179,6 +179,7 @@ b{
     .fall-back-menu{
       display: flex;
       z-index: 200;
+      opacity: 8;
     }
 
     .s-extra{
