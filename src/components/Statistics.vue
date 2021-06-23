@@ -28,7 +28,7 @@ export default {
           },
         }
       )
-        .then((Response) => Response.json)
+        .then((Response) => console.warn(Response.json()))
         .catch((err) => {
           console.error(err);
         }),
