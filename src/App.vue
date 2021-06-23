@@ -1,13 +1,13 @@
 <template>
-  <div id="app">
+  <div id="app" href="#top">
     <!-- **************************Header and Nav*************************** -->
 
     <Header />
 
     <!-- *******************************Injected page*************************** -->
-
+    <transition name="myCustom" mode="out-in">
     <router-view />
-
+    </transition>
     <!-- **************************Footer**************************** -->
 
     <Footer />
@@ -50,6 +50,18 @@ p {
 #nav a.router-link-exact-active {
   color: #42b983;
   text-decoration: underline;
+}
+
+
+.myCustom-enter-active,
+.myCustom-leave-active{
+  transition: opacity .4s, transform .4s;
+}
+
+.myCustom-enter,
+.myCustom-leave-to{
+  opacity: 0;
+  transform: translateX(-30);
 }
 </style>
 

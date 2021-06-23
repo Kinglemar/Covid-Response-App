@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div href="#top">
     <h1>Covid-19 Tracing Precursor</h1>
 
     <h2>Protect Yourself</h2>
@@ -43,9 +43,11 @@
     <p class="instructions">
       Please take out time to fill the online form to get help
     </p>
-    <button id="#Gethelp">
-      <router-link to="/gethelp">Get Help </router-link>
+
+    <router-link to="/gethelp">
+    <button id="#Gethelp" href="#top">Get Help
     </button>
+    </router-link>
   </div>
 </template>
 
