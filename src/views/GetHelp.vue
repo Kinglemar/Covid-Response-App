@@ -18,7 +18,7 @@
                     <p>
                         Full Name
                     </p>
-                    <input v-model.trim="$v.fullName.$model" v-model="form.fullName" class="name" type="text" name="name" id="" required>
+                    <input v-model.trim="$v.fullName.$model" v-model="form.fullName" class="name" type="text" name="fullName" id="" required>
                     <div class="errors" v-if="!$v.fullName.required  && $v.fullName.$dirty">Please enter your name</div>
                     <div class="errors" v-if="!$v.fullName.minLength">Name must be at least 3 characters</div>
                 </div>
@@ -157,7 +157,7 @@
                 days: '',
             },
 
-            fullName: '',
+                fullName: '',
                 number: '',
                 age: '',
                 state: '',
