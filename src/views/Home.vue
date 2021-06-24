@@ -203,7 +203,7 @@ button:hover {
 }
 
 .space-ring {
-  width: 1320px;
+  width: 1330px;
   overflow-x: auto;
   display: flex;
   align-items: center;
