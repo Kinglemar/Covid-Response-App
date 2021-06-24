@@ -115,6 +115,14 @@ button {
   button {
     background-color: #80ed99;
   }
+
+  h1{
+    font-size: 1.8rem;
+  }
+
+  h2,h3{
+    font-size: 1.2rem;
+  }
 }
 
 button:hover {
@@ -195,7 +203,7 @@ button:hover {
 }
 
 .space-ring {
-  width: 1300px;
+  width: 1320px;
   overflow-x: auto;
   display: flex;
   align-items: center;

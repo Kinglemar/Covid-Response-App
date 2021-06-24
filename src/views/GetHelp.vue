@@ -15,8 +15,7 @@
                         Full Name
                     </p>
                     <input v-model.trim="$v.fullName.$model" class="name" type="text" name="" id="" required>
-                    <div class="errors" v-if="!$v.fullName.required && $v.fullName.$dirty">Please enter your name</div>
-                    <!-- <div class="errors" v-if="!$v.fullName.alpha && !$v.fullName.dirty">Start name with capital letters</div> -->
+                    <div class="errors" v-if="!$v.fullName.required  && $v.fullName.$dirty">Please enter your name</div>
                     <div class="errors" v-if="!$v.fullName.minLength">Name must be at least 3 characters</div>
                 </div>
             </div>
@@ -26,7 +25,7 @@
                     <p>
                         Phone Number
                     </p>
-                    <input v-model.trim="number"  class="numb" placeholder="+23480000000" type="" name="number" id="" required>
+                    <input v-model.trim="$v.number.$model"  class="numb" placeholder="+23480000000" type="" name="number" id="" required>
                     <div class="errors" v-if="!$v.number.required && $v.number.$dirty">Please enter your phone number</div>
                     <div class="errors" v-if="!$v.number.minLength">Phone number must be at least 11 digits</div>
                 </div>
@@ -37,7 +36,7 @@
                     <p>
                         Age
                     </p>
-                    <input v-model.number="age" class="age" min="0" value="16" type="" name="age" id="" required>
+                    <input v-model.number="$v.age.$model" class="age" min="0" value="16" type="" name="age" id="" required>
 
                     <div class="errors" v-if="!$v.age.required && $v.age.$dirty">Please enter your age</div>
                     <div class="errors" v-if="!$v.age.between">Age must be between {{$v.age.$params.between.min}} and {{$v.age.$params.between.max}}</div>
@@ -49,7 +48,7 @@
                     <p>
                         State
                     </p>
-                    <select v-model.trim="state" class="state"  type="" name="state" id="" required>
+                    <select v-model.trim="$v.state.$model" class="state"  type="" name="state" id="" required>
                         <option value="Abia">Abia</option>
                         <option value="Adamawa">Adamawa</option>
                         <option value="Akwa Ibom">Akwa Ibom</option>
@@ -100,7 +99,7 @@
                     <p>
                         Address
                     </p>
-                    <input v-model.trim="address" class="address" placeholder="" type="text" name="address" id="" required>
+                    <input v-model.trim="$v.address.$model" class="address" placeholder="" type="text" name="address" id="" required>
                     <div class="errors" v-if="!$v.address.required && $v.address.$dirty">Please enter your address</div>
                     <div class="errors" v-if="!$v.address.minLength">Enter a valid address</div>
 
@@ -112,7 +111,7 @@
                     <p>
                         Number of days experiencing symptoms
                     </p>
-                    <input v-model.number="days" class="days" min="0" type="text" name="days" id="">
+                    <input v-model.number="$v.days.$model" class="days" min="0" type="text" name="days" id="">
                     <div class="errors" v-if="!$v.days.required && $v.days.$dirty">Please enter number of days you've been experiencing the symptoms</div>
                     <div class="errors" v-if="!$v.days.between">Enter a valid number of days between {{$v.days.$params.between.min}} and {{$v.days.$params.between.max}}</div>
                 </div>
@@ -120,7 +119,7 @@
 
             <div class="checkbox-wrapper">
                 <div class="form-group" :class="{ 'form-group--errors': $v.checked.$error}">
-                    <input v-model="checked" value="false" class="checked" type="checkbox" name="check" id="" required><span>Are you sure of the details provided?</span>
+                    <input v-model="$v.checked.$model" value="false" class="checked" type="checkbox" name="check" id="" required><span>Are you sure of the details provided?</span>
                     <div class="errors" v-if="!$v.checked.required && $v.checked.$dirty">Please acknowlegde the details provided</div>
                 </div>
             </div>
@@ -324,7 +323,7 @@ select{
 
 .errors{
     font-size: .8rem;
-    color: red;
+    color: #f94144;
 }
 
 .input-space{
@@ -401,8 +400,33 @@ span{
     border: 1px #a7c957 solid;
     border-radius: 4px;
     max-width: 17rem;
-    margin: 3rem auto;
+    margin: 2rem auto;
 }
+
+.form-group{
+    margin-bottom: .5rem;
+}
+
+.wrapper{
+    padding: 0;
+}
+
+span{
+    font-size: .5rem;
+    color: #f94144;
+}
+
+
+  h2{
+    font-size: 1.2rem;
+  }
+  h3{
+    font-size: 1rem;
+  }
+
+  p{
+      font-size: .8rem;
+  }
 }
 @media screen and (max-width:321px){
     .numb{

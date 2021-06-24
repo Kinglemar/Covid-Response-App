@@ -1,12 +1,14 @@
 <template>
-  <div id="app" href="#top">
+  <div id="app">
     <!-- **************************Header and Nav*************************** -->
 
     <Header />
 
     <!-- *******************************Injected page*************************** -->
     <transition name="myCustom" mode="out-in">
+
     <router-view />
+    
     </transition>
     <!-- **************************Footer**************************** -->
 
@@ -28,7 +30,7 @@
   text-align: center;
   color: #2c3e50;
   margin-top: 0.5rem;
-  padding-left: 0;
+  padding-left: 0rem;
 }
 
 h1,h2,h3{

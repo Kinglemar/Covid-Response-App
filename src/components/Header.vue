@@ -4,7 +4,7 @@
     <div>
         <span><i class="fas fa-virus fa-8x"></i><b>COVID-19</b></span>
     <nav>
-      <ul class="container">
+      <ul class="container new">
         <li class="spacer"><router-link to="/">Home <i class="fas fa-home fa-1x"></i></router-link></li>
         <li><router-link to="/gethelp" class="extra">Get Help <i class="fas fa-cross"></i></router-link></li>
         <li><router-link to="/guidelines" class="extra">Covid Guidelines <i class="fas fa-clipboard-list"></i></router-link></li>
@@ -55,6 +55,7 @@ li, a{
   color: #2c3e50;
   font-weight: 600;
   box-sizing: border-box;
+  margin: 0pc;
 }
 
 img{
@@ -97,14 +98,17 @@ b{
     text-decoration: underline;
 }
 
- .extra{
-        margin-left: 2rem;
-        
-      }
+.new{
+  margin: 0px;
+}
 
-      .s-extra{
-        padding: 1rem;
-      }
+.extra{
+  margin-left: 2rem;
+}
+
+.s-extra{
+  padding: 1rem;
+}
 
   .spacer{
     margin-right: auto;
@@ -116,6 +120,8 @@ b{
   .container{
     display: flex;
     box-sizing: border-box;
+    margin: 0;
+    max-width: 1320px;
   }
 
   .container i{
@@ -178,8 +184,6 @@ b{
 
     .fall-back-menu{
       display: flex;
-      z-index: 200;
-      opacity: 8;
     }
 
     .s-extra{
@@ -196,9 +200,15 @@ b{
       left: -1vw;
       background: #52b788;
       color: #fff;
+      z-index: 200;
+      opacity: 8;
     }
     nav i{
       color: #fff;
+    }
+
+    span i{
+      font-size: 6rem;
     }
 
     small{
