@@ -98,6 +98,11 @@
     }
   }
 
+  @media screen and (max-width:415px){
+    h1{
+      font-size: 1.3rem;
+    }
+  }
   @media screen and (max-width:281px){
     .ring{
       margin-left: 1.2rem;

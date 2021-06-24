@@ -26,7 +26,92 @@
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+  <!-- ***********************************Netlify form**************************************** -->
+
+      <form name="contact" method="POST" data-netlify="true" hidden>
+
+        <p class="hidden">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
+
+        <p>
+          <label>Full Name<input type="text" name="name" /></label>   
+        </p>
+
+        <p>
+          <label>Phone Number <input type="number" name="number" /></label>
+        </p>
+
+        <p>
+          <label>Age <input type="number" name="age" /></label>
+        </p>
+
+        <p>
+          <label>State<select name="state[]" multiple>
+            <option value="Abia">Abia</option>
+            <option value="Adamawa">Adamawa</option>
+            <option value="Akwa Ibom">Akwa Ibom</option>
+            <option value="Anambra">Anambra</option>
+            <option value="Bauchi">Bauchi</option>
+            <option value="Bayelsa">Bayelsa</option>
+            <option value="Benue">Benue</option>
+            <option value="Borno">Borno</option>
+            <option value="Cross River">Cross River</option>
+            <option value="Delta">Delta</option>
+            <option value="Ebonyi">Ebonyi</option>
+            <option value="Edo">Edo</option>
+
+            <option value="Ekiti">Ekiti</option>
+            <option value="Enugu">Enugu</option>
+            <option value="Gombe">Gombe</option>
+            <option value="Imo">Imo</option>
+            <option value="Jigawa">Jigawa</option>
+            <option value="Kaduna">Kaduna</option>
+            <option value="Kano">Kano</option>
+            <option value="Katsina">Katsina</option>
+            <option value="Kebbi">Kebbi</option>
+            <option value="Kogi">Kogi</option>
+            <option value="Kwara">Kwara</option>
+            <option value="Lagos">Lagos</option>
+
+            <option value="Nassarawa">Nassarawa</option>
+            <option value="Niger">Niger</option>
+            <option value="Ogun">Ogun</option>
+            <option value="Ondo">Ondo</option>
+            <option value="Osun">Osun</option>
+            <option value="Oyo">Oyo</option>
+            <option value="Plateau">Plateau</option>
+            <option value="Rivers">Rivers</option>
+            <option value="Sokoto">Sokoto</option>
+            <option value="Taraba">Taraba</option>
+            <option value="Yobe">Yobe</option>
+            <option value="Zamfara">Zamfara</option>
+            <option value="F.C.T">F.C.T</option>
+          </select>
+        </label>
+        </p>
+
+        <p>
+          <label>Address<input type="text" name="address" /></label>
+        </p>
+
+        <p>
+          <label>Address<input type="text" name="days" /></label>
+        </p>
+
+        <p>
+          <label>Address<input type="checkbox" name="check" /></label>
+        </p>
+        
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+<!-- ***************************APPLICATION******************************* -->
+
     <div id="app"></div>
+
+
     <!-- built files will be auto injected -->
   </body>
 </html>

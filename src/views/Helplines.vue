@@ -1,11 +1,11 @@
 <template>
     <div>
         <div>
-            <h3>In case of emergencies, please use these channels below</h3>
+            <h1>In case of emergencies, please use these channels below</h1>
             <p>These numbers are from <a href="https://covid19.ncdc.gov.ng/contact/" target="_blank">NCDC</a> official site</p>
         <div class="wrapper">
                     <div>
-        <h3 style="padding-left:4rem">NORTH CENTRAL</h3>
+        <h3>NORTH CENTRAL</h3>
 
         <div id="helplines">
                     <!-- <div id="helplines"> -->
@@ -423,6 +423,15 @@ h3,h2,p{
     padding-left: 2rem;
 }
 
+h1{
+    padding-left: 2rem;
+    font-size: 1.8rem;
+}
+h3{
+    color: green;
+    padding-left: 5rem;
+}
+
 ol{
     padding: 0 1rem;
 }
@@ -455,6 +464,36 @@ a{
     }
 }
 
+@media screen and (max-width:521px){
+   h1{
+    padding: 0rem 1rem;
+}
+}
+
+@media screen and (max-width:415px){
+h3,h1{
+    font-size: 1.3rem;
+}
+
+h1{
+    padding: 0rem 1rem;
+}
+
+h3{
+    padding-left: 2rem;
+}
+
+h4{
+    font-size: 1.1rem;
+}
+}
+
+@media screen and (max-width:321px){
+    h1{
+    padding: 0rem .5rem;
+    font-size: 1.2rem;
+    }
+}
 
 
 </style>

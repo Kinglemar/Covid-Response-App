@@ -82,6 +82,10 @@ h3,h2,h4,p{
     padding: 1rem;
 }
 
+h1{
+    text-align: center;
+}
+
 
 p{
     padding: 1rem;
@@ -91,6 +95,7 @@ p{
 i{
     text-align: left;
     color: #d90429;
+    margin-left: 2rem;
 }
 
 b{
@@ -109,8 +114,40 @@ b{
 }
 
 .checklist{
+    padding: 2rem 3rem;
+    text-align: left;
+}
+
+
+@media screen and (max-width:415px){
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    b,h3 {
+        font-size: 1.1rem;
+    }
+
+    h4{
+        font-size: 1.2rem;
+    }
+
+    .checklist i{
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
+
+    .checklist{
     padding: 2rem 1rem;
     text-align: left;
+}
+
+i{
+    text-align: left;
+    color: #d90429;
+    margin-left: 0rem;
+}
 }
 </style>
 
