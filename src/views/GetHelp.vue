@@ -412,8 +412,9 @@ span{
 }
 
 span{
-    font-size: .5rem;
+    font-size: .6rem;
     color: #f94144;
+    text-align: left;
 }
 
 
@@ -427,6 +428,7 @@ span{
   p{
       font-size: .8rem;
   }
+
 }
 @media screen and (max-width:321px){
     .numb{
