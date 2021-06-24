@@ -2,7 +2,9 @@
     <div id="nav">
 
     <div>
+      <div class="visible">
         <span><i class="fas fa-virus fa-8x"></i><b>COVID-19</b></span>
+      </div>
     <nav>
       <ul class="container new">
         <li class="spacer"><router-link to="/">Home <i class="fas fa-home fa-1x"></i></router-link></li>
@@ -184,6 +186,10 @@ b{
 
     .fall-back-menu{
       display: flex;
+    }
+
+    .visible{
+      border-bottom: 2px #ecedef solid;
     }
 
     .s-extra{
