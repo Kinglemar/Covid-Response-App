@@ -9,9 +9,9 @@
 
         <form  @submit.prevent="processSubmit" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 
-            <!-- <p class="hidden" style="display:none">
+            <p class="hidden" style="display:none">
                 <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-            </p> -->
+            </p>
 
             <div class="wrapper">
                 <div class="form-group" :class="{ 'form-group--errors': $v.fullName.$error}">
