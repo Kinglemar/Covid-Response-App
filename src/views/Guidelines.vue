@@ -3,7 +3,7 @@
 
     <h1>Try To Protect Yourself At All Times</h1>
       <div>
-        <!-- <Statistics /> -->
+        <Statistics />
       </div>
     <div class="gallery">
       <div class="space-ring">
@@ -36,7 +36,7 @@
 
 <script>
 
-  // import Statistics from "../components/Statistics"
+  import Statistics from "../components/Statistics"
 
 
     export default{
@@ -44,9 +44,9 @@
         props: {
 
         },
-        // components: {
-        //   Statistics
-        // }
+        components: {
+          Statistics
+        }
     }
 </script>
 
