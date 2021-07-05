@@ -26,7 +26,7 @@ export default {
           console.warn(api)
 
           api.init().
-          then(() => console.warn("Initialized."));
+          then(() => console.warn("Initialized...."));
 
 
           api.getDataByLocation("France")
