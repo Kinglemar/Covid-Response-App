@@ -14,7 +14,7 @@ export default {
       copyright: "KingLemar",
       year: function () {
         let time = new Date()
-        return (time.getFullYear())
+        return `2021 - ${(time.getFullYear())}`
       }
     }
     )
