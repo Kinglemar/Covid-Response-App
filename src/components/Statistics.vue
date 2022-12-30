@@ -12,31 +12,12 @@
 </template>
 
 <script>
-import { COVID19API } from "@evrimfeyyaz/covid-19-api";
 
 export default {
   name: "Statistics",
-  data: function () {
+  data(){
     return {
-      scroll: "",
-      methods: {
-        apiData(){
-          const api = new COVID19API();
-
-          console.warn(api)
-
-          api.init().
-          then(() => console.warn("Initialized...."));
-
-
-          api.getDataByLocation("France")
-          .then((data) => {
-          console.warn(data.location); // -> Turkey
-          this.scroll = data
-          console.warn(data.values[0].confirmed); // -> 0
-          });
-        }
-      }
+      
     }
   }
 }

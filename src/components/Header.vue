@@ -9,7 +9,7 @@
       <ul class="container new">
         <li class="spacer"><router-link to="/">Home <i class="fas fa-home fa-1x"></i></router-link></li>
         <li><router-link to="/gethelp" class="extra">Get Help <i class="fas fa-cross"></i></router-link></li>
-        <li><router-link to="/guidelines" class="extra">Covid Guidelines <i class="fas fa-clipboard-list"></i></router-link></li>
+        <li><router-link to="/guidelines" class="extra">Covid News <i class="fas fa-clipboard-list"></i></router-link></li>
         <li><router-link to="/checkup" class="extra" >Check-Up <i class="fas fa-stethoscope"></i></router-link></li>
         <li><router-link to="/helplines" class="extra">helplines <i class="fas fa-phone-alt"></i></router-link></li>
       </ul>
@@ -26,7 +26,7 @@
       <ul class="fall-back-menu hide">
         <li class=""><router-link to="/"><i class="fas fa-home fa-1x"></i><small class="push">Home</small></router-link></li>
         <li><router-link to="/gethelp" class="s-extra"><i class="fas fa-cross fa-1x"></i><small>Help</small></router-link></li>
-        <li><router-link to="/guidelines" class="s-extra"><i class="fas fa-clipboard-list fa-1x"></i><small>Guidelines</small></router-link></li>
+        <li><router-link to="/guidelines" class="s-extra"><i class="fas fa-clipboard-list fa-1x"></i><small>News</small></router-link></li>
         <li><router-link to="/checkup" class="s-extra"><i class="fas fa-stethoscope fa-1x"></i><small>CheckUp</small></router-link></li>
         <li><router-link to="/helplines" class="s-extra"><i class="fas fa-phone-alt fa-1x"></i><small>Helplines</small></router-link></li>
       </ul>
