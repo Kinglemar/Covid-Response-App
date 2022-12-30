@@ -1,7 +1,7 @@
 <template>
 
     <div class="checklist">
-    <h1>Check-Up</h1>
+    <h1>Symptoms</h1>
 
     <h3><b>According to instructions from UNICEF</b></h3>
     
